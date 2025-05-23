@@ -1,0 +1,10 @@
+*.swp
+*.undo
+*.backup
+*.swp
+*.undo
+*.backup
+.local/
+*.swp
+*.undo
+*.backup
