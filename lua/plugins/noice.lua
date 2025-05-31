@@ -19,8 +19,8 @@ return {
 				enabled = true,
 				view = "notify",
 				view_error = "popup",
-				view_warn = "popup",
-				view_history = "split",
+				view_warn = "notify",
+				view_history = "notify",
 				view_search = "virtualtext",
 			},
 			views = {

@@ -21,7 +21,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 
 	-- Tema
-	{ "folke/tokyonight.nvim", lazy = false, priority = 1000 },
+	--{ "folke/tokyonight.nvim", lazy = false, priority = 1000 },
 
 	-- Barra di stato
 	{ import = "plugins.lualine" },
@@ -87,10 +87,13 @@ require("lazy").setup({
 
 	-- Vista elegante degli errori diagnostici con comandi e scorciatoie comode
 	{ import = "plugins.trouble" },
+
+	-- Tema vero
+	{ import = "plugins.theme" },
 })
 
 -- Tema
-vim.cmd([[colorscheme tokyonight]])
+--vim.cmd([[colorscheme tokyonight]])
 
 -- Keymaps
 require("core.keymaps")
@@ -98,8 +101,8 @@ require("core.keymaps")
 -- LSP (linguaggi)
 --require("lsp")
 
--- Tema trasparente
-require("core.theme")
+-- Tema
+--require("core.theme")
 
 -- Notifiche di diagnostica
 require("core.diagnostic")
