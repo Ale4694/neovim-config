@@ -89,11 +89,17 @@ require("lazy").setup({
 	{ import = "plugins.trouble" },
 
 	-- Tema tokyonight
-	{ import = "plugins.theme" },
+	--	{ import = "plugins.theme" },
+
 	-- Tema Solarized-Osaka
 	--  { import = "plugins.theme_2" },
+	-- Tema cyberdream
+	{ import = "plugins.theme_3" },
+
 	--  Markdown
 	{ import = "plugins.markdown" },
+	-- Markdown-preview-web
+	{ import = "plugins.markdown-preview" },
 })
 
 -- Tema

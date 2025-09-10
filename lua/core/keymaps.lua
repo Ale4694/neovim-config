@@ -42,3 +42,6 @@ vim.api.nvim_create_user_command("ClearRender", function()
 end, {})
 vim.keymap.set("n", "<leader>rp", ":RenderMarkdown<CR>", { desc = "Preview Markdown" })
 vim.keymap.set("n", "<leader>rc", ":ClearRender<CR>", { desc = "Clear Markdown Preview" })
+
+-- Preview Markdown spazio+mp
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Markdown Preview" })

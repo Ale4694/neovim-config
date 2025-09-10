@@ -1,27 +1,14 @@
--- ~/.config/nvim/lua/plugins/trouble.lua
-
 return {
 	"folke/trouble.nvim",
-	cmd = "TroubleToggle",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	keys = {
-		{ "<leader>xx", "<cmd>TroubleToggle<cr>", desc = "Toggle Trouble" },
-		{ "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Diagnostica: workspace" },
-		{ "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "Diagnostica: buffer attuale" },
-		{ "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", desc = "Quickfix list" },
-		{ "<leader>xl", "<cmd>TroubleToggle loclist<cr>", desc = "Loclist" },
+		{ "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)" },
+		{ "<leader>xw", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer Diagnostics (Trouble)" },
+		{ "<leader>xs", "<cmd>Trouble symbols toggle<cr>", desc = "Symbols (Trouble)" },
+		{ "<leader>xq", "<cmd>Trouble qflist toggle<cr>", desc = "Quickfix List (Trouble)" },
+		{ "<leader>xl", "<cmd>Trouble loclist toggle<cr>", desc = "Location List (Trouble)" },
 	},
 	opts = {
-		use_diagnostic_signs = true, -- Usa gli stessi simboli di LSP
-		auto_open = false,
-		auto_close = false,
-		auto_preview = true,
-		signs = {
-			error = "",
-			warning = "",
-			hint = "",
-			information = "",
-			other = "",
-		},
+		use_diagnostic_signs = true,
 	},
 }
